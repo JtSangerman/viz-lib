@@ -11,8 +11,6 @@ This repo contains library source code and a simple angular web app for demo and
 3. `npm i`
 4. `ng serve`
 
-
-
 ---------------------------------
 
 Marcus and I are using this project as an outlet for exploring our interest in using visuals and/or harmoics to create renderings to depict beauty within data sets, algorithms, natural processes, natural patterns... or something. dunno yet! 
