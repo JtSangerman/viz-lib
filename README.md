@@ -1,5 +1,6 @@
 # viz-lib
-Lightweight library containing visual and harmonic renderings (via d3.js) that aim to depict beauty in natural processes, patterns and algorithms alike. Easily add stimulating visual and harmonic elements to your web app. 
+Lightweight library of visual and harmonic renderings aimed to please the eye and stimulate the mind (via d3.js). Seamlessly improve the aesthetic to any of your web apps using viz-lib.
+<sub><sub><sub>currently only developing support for Angular with global web support in future (surely)</sub></sub></sub>
 
 This repo contains library source code and a simple angular web app for demo and documentation of library components available:
 * Demo app source located at `src/demo-app`
