@@ -1,6 +1,17 @@
 # viz-lib
 Lightweight library containing visual and harmonic renderings that aim to depict beauty in natural processes, patterns and algorithms alike. Easily add stimulating visual and harmonic elements to your web app. 
 
+This repo contains library source code and a simple angular web app for demo and documentation of library components available
+
+## run demo:
+1. clone repo
+2. `cd viz-lib`
+3. `npm i`
+4. `ng serve`
+
+Demo app's source is at `src/demo-app`
+Lib source is at `src/lib` 
+
 ---------------------------------
 
 Marcus and I are using this project as an outlet for exploring our interest in using visuals and/or harmoics to create renderings to depict beauty within data sets, algorithms, natural processes, natural patterns... or something. dunno yet! 
