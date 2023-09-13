@@ -6,19 +6,34 @@ const Bubbl = () => {
   let span = 100;
   let hueIdx = 1;
 
+  d3
+    .select("#demos")
+    .append("div")
+    .text("<Bubbl />")
+    .style("font-weight", "bold")
+    .style("underline", "bold")
+    .style("font-size", "24px")
+    .style("margin", 0)
+    .style("display", "flex")
+    .style("justify-content", "center")
+
+
   let svg = d3
-      .select("#demos")
-      .append("div")
-      .text("<Bubbl />")
-      .style("font-size", "22px")
-      .style("text-align", "center")
-      .style("margin", 0)
-      .append("svg")
-      .attr("width", '100%')
-      .attr("height", '350px')
-      .style('background', 'radial-gradient(#fff, #ddd)')
-      .on("mousemove", (e) => cursorCircle(e, 30, 400))
-      .on("mousedown", (e) => cursorBurst(e, 1000, 2000));
+    .select("#demos")
+    .append("svg")
+    .attr("width", '100%')
+    .attr("height", '350px')
+    .style('background', 'radial-gradient(#fff, #ddd)')
+    .on("mousemove", (e) => cursorCircle(e, 30, 400))
+    .on("mousedown", (e) => cursorBurst(e, 1000, 2000));
+
+  d3.select("#demos")
+    .append("p")
+    .style("font-size", "12px")
+    .style("font-style", "italic")
+    .style("padding-left", "5px")
+    .style("margin", 0)
+    .text("> this viz is the result from exploring how to make a visual render on web. used d3.js & learned that it is incredible. powerful tool.")
 
   let hueText = svg
       .append("text")
