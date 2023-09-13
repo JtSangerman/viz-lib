@@ -4,8 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build":"ng build --prod --output-hashing=none",
+    "package":" pwd && cat ./dist/{polyfills,runtime,main}*.js > ./package.js",
+    "bundle":"npm run build && npm run package"
   },
   "private": true,
   "dependencies": {
