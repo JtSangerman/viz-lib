@@ -4,8 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build":"ng build --prod --output-hashing=none",
+    "package":"cat ./dist/{polyfills,runtime,main}*.js > ./dist/package.js && echo ^<script^> >> ./dist/index.html && cat ./dist/package.js >> ./dist/index.html && echo ^</script^> >> ./dist/index.html",
+    "bundle": "npm run build && npm run package",
+    "build-ez-demo":"npm run bundle && cd ./dist && ren index.html VizLib.demo.html && rm ./*.js && rm ./*.txt"
   },
   "private": true,
   "dependencies": {
