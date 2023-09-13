@@ -4,8 +4,8 @@ Lightweight library of visual and harmonic renderings aimed to please the eye an
 <sub><sub><sub>Beginning as only compatable with Angular. Global web support to be added in future (surely...).</sub></sub></sub>
 
 This repo contains library source code and a simple angular web app for demo and documentation of library components available:
-* Demo app source located at `src/demo-app`
-* Lib source located at `src/lib` 
+* Demo app source located at `/demo-app`
+* Lib source located at `/viz-lib` 
 
 ## run demo:
 1. clone repo and navigate to repo root
@@ -14,6 +14,9 @@ This repo contains library source code and a simple angular web app for demo and
 4. `cd ../demo-app`
 5. `npm i`
 6. `ng serve`
+
+## build
+`npm run build-ez-demo`: produces a distributable build of the demo app packaged into a single file output `/demo-app/dist/VizLib.demo.html`. no dependencies. opens in browser on any machie.
 
 ---------------------------------
 
