@@ -8,10 +8,12 @@ This repo contains library source code and a simple angular web app for demo and
 * Lib source located at `src/lib` 
 
 ## run demo:
-1. clone repo
-2. `cd viz-lib`
+1. clone repo and navigate to repo root
+2. `cd ./viz-lib`
 3. `npm i`
-4. `ng serve`
+4. `cd ../demo-app`
+5. `npm i`
+6. `ng serve`
 
 ---------------------------------
 

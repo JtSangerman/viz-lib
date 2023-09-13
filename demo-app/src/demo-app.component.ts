@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { VizLib } from "../../viz-lib/lib"
 
 @Component({
   selector: 'demo-app-root',
@@ -51,7 +52,7 @@ import { Component } from '@angular/core';
         <sup class="height-2rem"><sup><sup><sup><sup><sup><a href="https://github.com/JtSangerman/viz-lib" target="_blank">(source)</a></sup></sup></sup></sup></sup></sup>
         <br>
       </h1>
-      <div class="flex-col text-left-margin-align">
+      <div id="demos" class="flex-col text-left-margin-align">
         <h2 class="height-0rem subtitle">&gt; docs and demos</h2>
         <h5 class="subtext">This is where we can document and demo everything available within the viz-lib library</h5>
       </div>
@@ -66,6 +67,10 @@ import { Component } from '@angular/core';
       </div>
   `
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'viz-lib';
+
+  ngOnInit(): void {
+    VizLib.Bubbl();
+  }
 }
