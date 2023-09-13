@@ -6,8 +6,9 @@
     "start": "ng serve",
     "lint": "ng lint",
     "build":"ng build --prod --output-hashing=none",
-    "package":" pwd && cat ./dist/{polyfills,runtime,main}*.js > ./package.js",
-    "bundle":"npm run build && npm run package"
+    "package":"cat ./dist/{polyfills,runtime,main}*.js > ./dist/package.js && echo ^<script^> >> ./dist/index.html && cat ./dist/package.js >> ./dist/index.html && echo ^</script^> >> ./dist/index.html",
+    "bundle": "npm run build && npm run package",
+    "build-one-tap-file":"npm run build && npm run package"
   },
   "private": true,
   "dependencies": {
