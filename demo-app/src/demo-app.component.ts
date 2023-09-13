@@ -34,6 +34,11 @@ import { VizLib } from "../../viz-lib/lib"
     .subtext {
       font-style: italic;
     }
+    .description {
+      font-size: 45%;
+      margin-top: -1rem;
+      margin-bottom: 0.5rem;
+    }
     .break-line {
       border-bottom: 1px solid #369;
       margin-bottom: -1rem;
@@ -43,14 +48,37 @@ import { VizLib } from "../../viz-lib/lib"
     }
     .height-0rem {
       height: 0rem;
+    }
+    .credit {
+      margin-top: -.5rem;
+      padding-bottom: 1px;
+      display: flex;
+      justify-content: flex-end;
+      font-size: 125%;
+    }
+    a {
+      z-index: 777;
     }`
 ],
   template: `
     <div class="theme flex-col">
       <h1 class="break-line">
         <strong class="title">&lt;viz-lib&gt;</strong>
-        <sup class="height-2rem"><sup><sup><sup><sup><sup><a href="https://github.com/JtSangerman/viz-lib" target="_blank">(source)</a></sup></sup></sup></sup></sup></sup>
+        <h5 class="subtext subtitle description">a lightweight js library for adding pleasant visual renders to anything web</h5>
+
         <br>
+
+        <sup class="height-2rem"><sup><sup><sup><sup><sup>
+          <div class="flex-col">
+            <div class="credit">
+              contributors: [
+                &nbsp;<a href="https://github.com/Marcus-Kim" target="_blank">marcus</a>,
+                &nbsp;<a href="https://github.com/JtSangerman" target="_blank">jamie</a>&nbsp;]
+              &nbsp;&nbsp;| &nbsp;&nbsp;
+              <a href="https://github.com/JtSangerman/viz-lib" target="_blank">src</a>
+            </div>
+          </div>
+        </sup></sup></sup></sup></sup></sup>
       </h1>
       <div id="demos" class="flex-col text-left-margin-align">
         <h2 class="height-0rem subtitle">&gt; docs and demos</h2>
