@@ -1,0 +1,65 @@
+a {
+  z-index: 777;
+}
+.theme {
+  text-align: center;
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.text-left-margin-align {
+  text-align: left;
+  margin-left: 1%;
+}
+.title {
+  font-size: 300%;
+  font-weight: bold;
+  margin: 5px 15px 0px 5px;
+  height: 6rem;
+}
+.subtitle {
+  font-size: 200%;
+  margin-bottom: 1rem;
+}
+.subtext {
+  font-style: italic;
+}
+.description {
+  font-size: 45%;
+  margin-top: -1rem;
+  margin-bottom: 0.5rem;
+}
+.break-line {
+  border-bottom: 1px solid #369;
+  margin-bottom: -1rem;
+}
+.height-2rem {
+  height: 2rem;
+}
+.height-0rem {
+  height: 0rem;
+}
+.credit {
+  margin-top: -.5rem;
+  padding-bottom: 1px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 125%;
+}
+.content-container {
+  margin-bottom: 2rem;
+}
+.divider {
+  border-bottom: 1px solid #369;
+}
+.example-header {
+  margin-bottom: 0;
+  margin-top: 2rem;
+}
