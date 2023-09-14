@@ -11,5 +11,6 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     VizLib.Bubbl();
+    VizLib.MatrixImage();
   }
 }
