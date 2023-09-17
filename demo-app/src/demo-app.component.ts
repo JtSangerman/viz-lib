@@ -7,17 +7,11 @@ import { VizLib } from "../../viz-lib/lib"
   templateUrl: './demo-app.component.html'
 })
 export class AppComponent implements OnInit {
-  demoArea: HTMLElement = null;
-
-  constructor(){
-  }
-
   ngOnInit(): void {
     const demoDiv = document.getElementById("demos");
-    console.log({VizLib, demoDiv})
 
-    VizLib.Bubbl(document.getElementById("demos"));
-    VizLib.MatrixImage(document.getElementById("demos"));
-    VizLib.Tetriz(document.getElementById("demos"));
+    VizLib.Bubbl(demoDiv);
+    VizLib.MatrixImage(demoDiv);
+    VizLib.Tetriz(demoDiv);
   }
 }
