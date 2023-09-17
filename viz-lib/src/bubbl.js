@@ -1,5 +1,5 @@
 
-const Bubbl = () => {
+const Bubbl = (parent) => {
   const d3 = require("d3");
 
   let nextHue = 0;
@@ -7,7 +7,7 @@ const Bubbl = () => {
   let hueIdx = 1;
 
   d3
-    .select("#demos")
+    .select(parent)
     .append("div")
     .text("<Bubbl />")
     .style("font-weight", "bold")
@@ -19,7 +19,7 @@ const Bubbl = () => {
 
 
   let svg = d3
-    .select("#demos")
+    .select(parent)
     .append("svg")
     .attr("width", '100%')
     .attr("height", '350px')
@@ -27,7 +27,8 @@ const Bubbl = () => {
     .on("mousemove", (e) => cursorCircle(e, 30, 400))
     .on("mousedown", (e) => cursorBurst(e, 1000, 2000));
 
-  d3.select("#demos")
+  d3
+    .select(parent)
     .append("p")
     .style("font-size", "12px")
     .style("font-style", "italic")
