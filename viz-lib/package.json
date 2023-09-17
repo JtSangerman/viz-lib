@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "d3": "^7.8.5"
-  }
+  },
+  "name": "@jimyuh/viz-lib",
+  "version": "0.0.0",
+  "description": "Lightweight library of visual and harmonic renderings aimed to please the eye and stimulate the mind. Improve the your aesthetic to anything web using viz-lib.",
+  "main": "lib.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo 'unsupported'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JtSangerman/viz-lib.git#feature\/create-npm-package-for-vizlib"
+  },
+  "keywords": [
+    "pleasant",
+    "visuals",
+    "for",
+    "u"
+  ],
+  "author": "jtsangerman, marcus-kim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JtSangerman/viz-lib/issues"
+  },
+  "homepage": "https://github.com/JtSangerman/viz-lib#readme"
 }
